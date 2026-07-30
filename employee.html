@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RMS Employee Management</title>
+
+<link rel="stylesheet" href="employee.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>RMS Employee Management</h1>
+
+<div class="form">
+
+<input type="text" id="name" placeholder="Employee Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="text" id="department" placeholder="Department">
+
+<input type="text" id="designation" placeholder="Designation">
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="addEmployee()">Add Employee</button>
+Add Employee
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Department</th>
+
+<th>Designation</th>
+
+<th>Delete</th>
+
+</tr>
+
+</thead>
+
+<tbody id="employeeTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="employee.js"></script>
+
+</body>
+</html>

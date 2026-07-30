@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RMS Announcements</title>
+<link rel="stylesheet" href="announcement.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>RMS Announcement Panel</h1>
+
+<input type="text" id="title" placeholder="Announcement Title">
+
+<textarea id="message" placeholder="Write Announcement"></textarea>
+
+<input type="date" id="date">
+
+<input type="file" id="file">
+
+<label>
+
+<input type="checkbox" id="pin">
+
+Pin Announcement
+
+</label>
+
+<button onclick="saveAnnouncement()">Publish</button>
+
+<h2>Published Announcements</h2>
+
+<div id="announcementList"></div>
+
+</div>
+
+<script src="announcement.js"></script>
+
+</body>
+</html>

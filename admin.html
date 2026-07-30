@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RMS Admin Panel</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+    <div class="statusBar">
+
+<h3 id="today"></h3>
+
+<h3 id="clock"></h3>
+
+</div>
+
+<h2>RMS ADMIN</h2>
+
+<ul>
+
+<li onclick="goDashboard()">
+<i class="fa fa-house"></i>
+Dashboard
+</li>
+
+<li onclick="goLeave()">
+<i class="fa fa-calendar-days"></i>
+Leave Plan
+</li>
+
+<li onclick="goShift()">
+<i class="fa fa-clock"></i>
+Shift Plan
+</li>
+
+<li onclick="goProject()">
+<i class="fa fa-diagram-project"></i>
+Projects
+</li>
+
+<li onclick="goEmployee()">
+<i class="fa fa-users"></i>
+Employees
+</li>
+
+<li onclick="logout()">
+<i class="fa fa-right-from-bracket"></i>
+Logout
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>Welcome HOD 👨‍💼</h1>
+
+<div class="profile">
+
+<i class="fa-solid fa-bell"></i>
+
+<img src="https://i.pravatar.cc/80">
+
+</div>
+
+</div>
+
+<!-- Cards -->
+
+<div class="cards">
+
+<div class="card">
+<i class="fa fa-users"></i>
+<h2 id="employeeCount">0</h2>
+<p>Total Employees</p>
+</div>
+
+<div class="card">
+<i class="fa fa-calendar-days"></i>
+<h2 id="leaveCount">0</h2>
+<p>Total Leaves</p>
+</div>
+
+<div class="card">
+<i class="fa fa-clock"></i>
+<h2 id="shiftCount">0</h2>
+<p>Total Shifts</p>
+</div>
+
+<div class="card">
+<i class="fa fa-diagram-project"></i>
+<h2 id="projectCount">0</h2>
+<p>Projects</p>
+</div>
+
+</div>
+
+<!-- Quick Actions -->
+
+<h2 class="title">Quick Actions</h2>
+
+<div class="actions">
+
+<button onclick="goLeave()">
+Add Leave Plan
+</button>
+
+<button onclick="goShift()">
+Add Shift Plan
+</button>
+
+<button onclick="goProject()">
+Add Project
+</button>
+
+<button onclick="goEmployee()">
+Add Employee
+</button>
+
+<button onclick="goAnnouncement()">
+Add Announcement
+</button>
+
+</div>
+
+<!-- Table -->
+
+<h2 class="title">Latest Activities</h2>
+
+<table>
+
+<tr>
+
+<th>Date</th>
+
+<th>Activity</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>01-08-2026</td>
+
+<td>Leave Plan Updated</td>
+
+<td><span class="green">Completed</span></td>
+
+</tr>
+
+<tr>
+
+<td>02-08-2026</td>
+
+<td>New Project Added</td>
+
+<td><span class="blue">Running</span></td>
+
+</tr>
+
+<tr>
+
+<td>03-08-2026</td>
+
+<td>Innovation Uploaded</td>
+
+<td><span class="green">Completed</span></td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

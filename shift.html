@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RMS Shift Management</title>
+<link rel="stylesheet" href="shift.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>RMS Shift Management</h1>
+
+<div class="form">
+
+<input type="text" id="empName" placeholder="Employee Name">
+
+<select id="shift">
+<option>Morning (06:00 - 14:00)</option>
+<option>Evening (14:00 - 22:00)</option>
+<option>Night (22:00 - 06:00)</option>
+<option>General (09:00 - 18:00)</option>
+</select>
+
+<input type="date" id="shiftDate">
+
+<button onclick="addShift()">Assign Shift</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Employee</th>
+<th>Shift</th>
+<th>Date</th>
+<th>Delete</th>
+
+</tr>
+
+</thead>
+
+<tbody id="shiftTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="shift.js"></script>
+
+</body>
+</html>
